@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function header(props) {
     return (
@@ -24,3 +25,12 @@ export default function header(props) {
 </nav>
     )
 }
+header.defaultProps = {
+  title: 'your title here',
+  searchbar: false
+};
+
+header.prototype = {
+  title: PropTypes.strings
+}
+

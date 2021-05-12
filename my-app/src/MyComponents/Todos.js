@@ -1,9 +1,10 @@
 import React from 'react'
-
-export default function Todos() {
+import TodoItems from "./TodoItmes";
+export default function Todos(props) {
     return (
-        <div>
-            it is Todos
+        <div className = 'container'>
+            <h3>to dos list</h3>
+            <TodoItems Todo={props.Todos}/>
         </div>
     )
 }
